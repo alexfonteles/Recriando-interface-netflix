@@ -1,0 +1,82 @@
+:root{
+    --vermelho: #e50914;
+    --preto: #141414;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background: var(--preto);
+}
+
+/*cabeçalho*/
+header{
+    display: flex;
+    align-items: center;
+}
+header .logo{
+    color: var(--vermelho);
+    font-size: 30px;
+
+    margin-right: 10px;
+}
+header nav a {
+    text-decoration: none;
+    color: #aaa;
+    margin-left: 10px;
+}
+header nav a:hover {
+    text-decoration: none;
+    color: rgb(119, 118, 118);
+    margin-right: 10px;
+}
+/* Main*/
+
+/* Container - Filme principal */
+.filme-principal{
+    color: #aaa;
+    height: 400px;
+    padding-left: 10px;
+
+    background: linear-gradient(rgba(0,0,0,.40), rgba(0,0,0,.40)), url('/assets/images/got.jpg') no-repeat right;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;    
+}
+.filme-principal .titulo{
+    margin-bottom: 15px;
+
+    font-family: 'Trebuchet MS', Arial, sans-serif;
+    font-size: 30px;
+}
+.filme-principal .descricao{
+    margin-bottom: 50px;
+    width: 60%;
+}
+
+.filme-principal button{
+    background-color: rgba(0,0,0,.50);
+    border: none;
+    color: #ffffff;
+
+    margin: 10px;
+    padding: 15px;
+
+    cursor: pointer;
+    transition: 2s ease all;
+}
+.filme-principal button:hover{
+    background-color: #ffffff;
+    color: #000;
+}
+
+/*carousel com lista de filmes*/
+.painel-carousel{
+    margin: 15px 10px;
+
+    color: #ffffff;
+}
