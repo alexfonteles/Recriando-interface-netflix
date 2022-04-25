@@ -1,0 +1,17 @@
+@media screen and (max-width: 700px){
+header{
+    display: flex;
+    flex-direction: column;
+}
+.filme-principal{
+    height: 500px;
+}
+.filme-principal button{
+    display: flex;
+    width: 200px;
+}
+}
+
+@media screen and (min-width: 700px){
+    
+}
